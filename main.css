@@ -1,0 +1,165 @@
+@import url(nav.css);
+@import url(pitch.css);
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.ea {
+	color: #f4522b;
+}
+.ha {
+	color: #FF7733;
+}
+.n {
+	color: #FFB533;
+}
+
+.container {
+    width: 80px;
+    margin: 0 10%;
+}
+
+header {
+	position: fixed;
+}
+
+.wallpapers {
+	position: absolute;
+	top: 60px;
+	height: calc(100vh - 100px);
+	width: 100vw;
+	z-index: 30;
+}
+
+.wallpapers .a {
+	width: 100vw;
+	height: calc(100vh - 60px);
+	background-image: url('./images/wp-carlos.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.wallpapers .middle {
+	text-align: center;
+	position: absolute;
+	margin: 0px 2%;
+	width: 98%;
+	top: 35vh;
+}
+
+.wallpapers h1 {
+	color: white;
+	text-transform: uppercase;
+	font-size: 100px;
+}
+
+.wallpapers h4 {
+	color: grey;
+	font-size: 30px;
+}
+
+.b {
+	margin-top: 20px;
+	padding: 10px 25px;
+	font-size: 22px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 2px;
+	background-color: #FFB533;
+	color: #f4522b;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+footer {
+	background-color: black;
+	width: 100vw;
+	height: 120px;
+	margin-top: 20px;
+	position: absolute;
+}
+
+.minus {
+	bottom: -1400px;
+}
+
+.fdiv {
+	padding-left: 20px;
+	padding-top: 25px;
+}
+
+.fdiv p, .fdiv h3 {
+	color: white;
+}
+
+.fdiv a {
+	text-decoration: none;
+	color: white;
+}
+
+.fdiv a:hover {
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
+.cont {
+	width: 400px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -200px;
+}
+
+.cont p {
+	text-align: center;
+	margin: 10px 0px;
+}
+
+input[type=text] {
+	border: 2px solid #f4522b;
+	outline: none;
+	width: 400px;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+textarea {
+	width: 400px;
+	height: 150px;
+	margin: 20px 0px;
+	border: 2px solid #f4522b;
+	outline: none;
+	resize: none;
+	padding: 10px;
+	font-family: 'Lato', sans-serif;
+}
+
+input[type=submit] {
+	text-align: center;
+	background-color: #f4522b;
+	color: white;
+	outline: none;
+	border: none;
+	width: 105.5%;
+	padding: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	font-size: 15px;
+}
